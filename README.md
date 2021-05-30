@@ -16,7 +16,7 @@ The `data_quality.py` script runs a number of data quality checks. The potential
 - There are 7 records where the purchase date is after the finish date, which does not seem like it should ever be the case.
 - There are 13 records where the scan date is prior to the purchase date, which again seems like it should never be the case.
 - There are 212 unique user_id values and 495 user records. It turns out that 283 of the records are duplicates.
-- Barcodes in the brands data are not unique. Looking at a few of the duplications, it appears that there may be some test/dummy data causing this (e.g. barcode 511111704140 is used for the sauce brand Prego, but also for "Diet Chris Cola")
+- Barcodes in the brands data are not unique. Looking at a few of the duplications, it appears that there may be some test/dummy data causing this (e.g. barcode 511111704140 is used for the sauce brand Prego, but also used for "Diet Chris Cola")
 - Many categories in the brands data are mising category codes.
 
 ## 4. Communicate with Stakeholders
