@@ -8,7 +8,7 @@ This query is written to run in PostgreSQL, although the syntax is all pretty st
 
 I chose to answer those two rather than the other questions because I have some hesitations about the reliability of the receipt to brand relationship (via a bridge table) in the model I created. The first is that many receipts are missing `brandCode` values, and the second is that `brandCode` is not totally unique (there are two exceptions that need to be addresed prior to this relationship becoming operational). Any queries that use the bridge table would also require additional joins, which would make them less performant. 
 
-Without using additional data (e.g. a product file), I also could not find a better way to join the two than using `brandCode`. I noticed that both brands and receipt items also have barcodes, but this did not seem like a suitable option for two reasons. The first is that none of the barcodes from the receipts data I checked appeared in the brands data, and the second is that some barcodes are duplicated in the brands data (e.g. 511111704140, which appears for both Prego sauce and "Diet Chris Cola").   
+Without using additional data (e.g. a product file), I also could not find a better way to join the two than using `brandCode`. I noticed that both brands and receipt items also have barcodes, but this did not seem like a suitable option because none of the barcodes from the receipts data I checked appeared in the brands data.
 
 ## 3. Data quality
 The `data_quality.py` script runs a number of data quality checks. The potential issues I discovered were the following:
