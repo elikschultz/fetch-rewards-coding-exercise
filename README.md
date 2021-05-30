@@ -1,4 +1,4 @@
-# Fetch Rewards Coding Exercise
+# [Fetch Rewards Coding Exercise](https://fetch-hiring.s3.amazonaws.com/analytics-engineer/ineeddata-data-modeling/data-modeling.html)
 
 ## 1. Relational data model
 I created a relational data model that is diagramed in relational_data_model.pdf. There were a few tricky decisions to make when designing that, which are discussed further in the document itself.
